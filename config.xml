@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.workshare.kendoui.example"
+        versionCode="1" 
+        version   = "1.0.0">
+
+    <name>KendoUI Example</name>
+
+    <description>
+        An example using KendoUI component. 
+    </description>
+
+    <author href="https://www.workshare.com" email="support@workshare.com">
+        Engineering (London)
+    </author>
+
+    <gap:splash src="splash.png" />
+
+</widget>
