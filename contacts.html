@@ -1,31 +1,104 @@
-<div data-role="view" id="application-store" data-title="Buy Music">
-    <div class="head">&nbsp;</div>
-    <ul data-role="listview" data-style="inset" data-type="group">
-        <li>Products:
+<div data-role="view" id="navbar-home" data-title="Us">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a id="back-button" class="nav-button" data-align="left" data-role="backbutton">Back</a>
+            <span data-role="view-title"></span>
+            <a data-align="right" data-role="button" class="nav-button" href="#index">Index</a>
+            <a data-align="right" data-icon="organize" data-role="button" href="#navbar-grouped">Group</a>
+        </div>
+    </header>
+    <ul data-role="listview">
+        <li><h2>Francisco Chang</h2><img src="images/people/francisco.jpg" /></li>
+        <li><h2>Daniel Tonini</h2><img src="images/people/daniel.jpg" /></li>
+        <li><h2>Annette Roulet</h2><img src="images/people/annette.jpg" /></li>
+        <li><h2>Carine Schmitt</h2><img src="images/people/carine.jpg" /></li>
+        <li><h2>Ann Devon</h2><img src="images/people/ann.jpg" /></li>
+        <li><h2>Catherine Dewey</h2><img src="images/people/catherine.jpg" /></li>
+        <li><h2>Diego Roel</h2><img src="images/people/diego.jpg" /></li>
+        <li><h2>Elizabeth Brown</h2><img src="images/people/elizabeth.jpg" /></li>
+        <li><h2>Eduardo Saavedra</h2><img src="images/people/eduardo.jpg" /></li>
+        <li><h2>Antonio Moreno</h2><img src="images/people/antonio.jpg" /></li>
+        <li><h2>Felipe Izquierdo</h2><img src="images/people/felipe.jpg" /></li>
+        <li><h2>Fran Wilson</h2><img src="images/people/fran.jpg" /></li>
+    </ul>
+</div>
+
+<div data-role="view" id="navbar-grouped" data-title="Contacts">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a class="nav-button" data-align="left" data-role="backbutton">Back</a>
+            <span data-role="view-title">Contacts</span>
+            <a data-align="right" data-role="button" class="nav-button" href="#index">Index</a>
+            <a data-align="right" data-icon="stop" data-role="button" href="#navbar-home">Ungroup</a>
+        </div>
+    </header>
+    <ul data-role="listview" data-type="group">
+        <li>
+            A
             <ul>
-                <li><a href="">Workshare Platform</a></li>
-                <li><a href="">Workshare Social</a></li>
-                <li><a href="">Professional</a></li>
-                <li><a href="">Protect</a></li>
-                <li><a href="">Compare</a></li>
-                <li><a href="">Point</a></li>
-                <li><a href="">Protect Service</a></li>
-                <li><a href="">Protect Server</a></li>
-                <li><a href="">Compare Server</a></li>
+                <li><h2>Ann Devon</h2><img src="images/people/ann.jpg" /></li>
+                <li><h2>Annette Roulet</h2><img src="images/people/annette.jpg" /></li>
+                <li><h2>Antonio Moreno</h2><img src="images/people/antonio.jpg" /></li>
+            </ul>
+        </li>
+        <li>
+            C
+            <ul>
+                <li><h2>Carine Schmitt</h2><img src="images/people/carine.jpg" /></li>
+                <li><h2>Catherine Dewey</h2><img src="images/people/catherine.jpg" /></li>
+            </ul>
+        </li>
+        <li>
+           D
+            <ul>
+                <li><h2>Daniel Tonini</h2><img src="images/people/daniel.jpg" /></li>
+                <li><h2>Diego Roel</h2><img src="images/people/diego.jpg" /></li>
+            </ul>
+        </li>
+        <li>
+            E
+            <ul>
+                <li><h2>Eduardo Saavedra</h2><img src="images/people/eduardo.jpg" /></li>
+                <li><h2>Elizabeth Brown</h2><img src="images/people/elizabeth.jpg" /></li>
+            </ul>
+        </li>
+        <li>
+            F
+            <ul>
+                <li><h2>Felipe Izquierdo</h2><img src="images/people/felipe.jpg" /></li>
+                <li><h2>Fran Wilson</h2><img src="images/people/fran.jpg" /></li>
+                <li><h2>Francisco Chang</h2><img src="images/people/francisco.jpg" /></li>
             </ul>
         </li>
     </ul>
-    <a data-role="button" href="#:back" style="display: block; margin: 1em; text-align: center;">Go back!</a>
 </div>
+
 <style scoped>
-#application-store .head {
-	display: block;
-	margin: 1em;
-	height: 110px;
-	background: url(images/myworkshare.jpg) no-repeat center center;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
+
+#navbar-home h2,
+#navbar-grouped h2 {
+    display: inline-block;
+    font-size: 1.1em;
+    margin: 1em 0 1.5em 1em;
+}
+
+#navbar-home img,
+#navbar-grouped img {
+	float: left;
+    width: 4em;
+    height: 4em;
+    margin: 0;
+    -webkit-box-shadow: 0 1px 3px #333;
+    box-shadow: 0 1px 3px #333;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.km-ios #navbar-home .km-listview,
+.km-ios #navbar-grouped .km-list {
+    background-color: #eaf1f5;
 }
 </style>
+
+
+
